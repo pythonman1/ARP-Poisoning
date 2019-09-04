@@ -5,7 +5,7 @@ from scapy.all import *
 
 parser = argparse.ArgumentParser(description = "ARP Poisoning and saving targets packets in PCAP files")
 parser.add_argument("-i",'--interface', dest = 'interface', type = str)
-parser.add_argument('-c','--count', dest = 'count', type = int, help = '- How much packet you want to sniff')
+parser.add_argument('-c','--count', dest = 'count', type = int, help = '- Packets count')
 parser.add_argument('-g',"--gateway", dest = 'gateway', help = '- Gateway local IP address', type = str)
 parser.add_argument('-t','--target', dest = 'target',help = '- Targets IPs',  type = str)
 
